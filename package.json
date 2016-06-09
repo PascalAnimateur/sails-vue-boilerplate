@@ -21,5 +21,8 @@
     "url": "git://github.com/pascalmartineau/sails-vue-boilerplate.git"
   },
   "author": "pascalmartineau",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "sails-hook-autoreload": "^0.13.1"
+  }
 }

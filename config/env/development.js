@@ -12,13 +12,19 @@
 
 module.exports = {
 
-  /***************************************************************************
-   * Set the default database connection for models in the development       *
-   * environment (see config/connections.js and config/models.js )           *
-   ***************************************************************************/
-
-  // models: {
-  //   connection: 'someMongodbServer'
-  // }
+  // sails-hook-autoreload
+  autoreload: {
+    active: true,
+    usePolling: false,
+    dirs: [
+      "api/controllers",
+      "api/models",
+      "api/services",
+      "config/locales"
+    ],
+    ignored: [
+      "**.ts"
+    ]
+  }
 
 };
